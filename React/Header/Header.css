@@ -1,0 +1,51 @@
+.header {
+	margin: 0px;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #fff;
+	font-family: Knowledge;
+    border-bottom: .0625rem solid #d0d0d0;
+	border-top:.0625rem solid #d0d0d0;
+    height: 78px;
+	background-position: 50%;
+	background-repeat: no-repeat;
+    background-size: contain
+}
+.img {
+	width:60px;
+	height:60px;
+	padding-top:9px;
+	padding-left: 100px
+}
+
+.title {
+      
+      line-height: 1 !important;
+      font-size: 20px;
+      font-weight: 900;
+      line-height: 21px;
+      letter-spacing: 2px;
+      color: #A9A9A9;
+      text-decoration: none;
+      padding: 1rem;
+      position: relative;
+      top: -1.2rem;
+	  display: inline-block
+}
+
+.rightSegment {
+	display: inline-block;
+	float: right;
+	 top: -1.2rem;
+	 font-size: 20px;
+	  padding: 1rem;
+	  padding-right: 100px
+}
+
+.spanTest {
+	padding-left: 0.5rem;
+	cursor: pointer
+}

@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
+import './App.css';
+import Header from './Header/Header.js';
+import Footer from './Footer/Footer.js';
+
+
+const test = {
+	margin: '0px',
+    backgroundColor: '#fff'
+};
 class App extends Component{
-	
+	 
 	 //isMounted = false;
 	constructor(props) {
 		super(props);
@@ -40,16 +49,18 @@ class App extends Component{
 	}*/
 
 render() {
-		return (<div className="container">
-			<table className="table table-striped">
-				<thead>
+		return (<div style={test}>
+		<Header/>
+			<table>
+				<thead >
 					<tr><th>Service RequestId </th><th> Request Name</th></tr></thead>
 				{this.state.serviceRequests.map((serviceRequest, index) => (
 					<tbody><tr><td>{serviceRequest.serviceRequestId} </td><td> {serviceRequest.requestName}</td>
-						<td><button className="btn btn-info" onClick={this.handleDelete}>Delete</button></td>
+						<td><button className="movie-card" onClick={this.handleDelete}>Delete</button></td>
 					</tr></tbody>
 				))}
 			</table>
+			<Footer/>
 		</div>);
 	}
 	/*return (<div className="container">

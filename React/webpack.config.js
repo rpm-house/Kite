@@ -20,8 +20,16 @@ module.exports = {
             query: {
                presets: ['es2016', 'react']
             }
-         }
-      ]
+         },
+		 {
+			test: /\.css$/,
+			use: [
+				'style-loader',
+				'css-loader'
+			]
+		}
+		]
+
    },
    plugins:[
       new HtmlWebpackPlugin({
